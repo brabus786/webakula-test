@@ -1,0 +1,63 @@
+.screen2Carusel{
+  //border:1px solid green;
+  padding: 0 40px;
+  position: relative;
+  overflow: hidden;
+
+  .owl-carousel, .owl-carousel2{
+    overflow: hidden;
+    transition: 1s;
+  }
+  .owl-carousel2{
+    display: none;
+    opacity: 0;
+
+  }
+
+  .owl-item{
+    //border:1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .owl-stage{
+    display: flex;
+  }
+  .disabled{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    transform: translateY(-70%);
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+
+    .owl-prev{
+      transform: translateX(30px);
+      background-color: rgba(255,255,255,0) !important;
+      border: none !important;
+      outline: none !important;
+
+      span{
+        color: black !important;
+        font-size: 30px !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+    }
+    .owl-next{
+      transform: translateX(-30px);
+      background-color: rgba(255,255,255,0) !important;
+      border: none !important;
+      outline: none !important;
+
+      span{
+        color: black !important;
+        font-size: 30px !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+    }
+  }
+}

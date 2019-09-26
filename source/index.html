@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#528A4A"/>
+    <meta name="Description" content="Test markup project">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--   TODO: Switch priority to critical -->
+    <link rel="stylesheet" priority="critical" href="assets/css/libs.min.css">
+    <link rel="stylesheet" priority="critical" href="assets/css/critical.css">
+    <link rel="stylesheet" priority="queued" href="assets/css/main.css">
+    <title>Test</title>
+</head>
+<body>
+<main>
+    <section class="screen1">
+        <nav class="mob-menu" id="mob-menu">
+            <ul class="mob-menu-ul">
+                <li><a href="">Главная</a></li>
+                <li class="drop-down-menu-mob-wrap" id="mob1"><a data-metka-a="#mob1">Туры</a>
+                    <div class="menu-mob">
+                        <ul class="drop-down-menu-mob">
+                            <li><a href="">Горящие туры</a></li>
+                            <li><a href="">Поиск тура</a></li>
+                            <li><a href="">Туры по Украине</a></li>
+                            <li><a href="">Экскурсионные туры</a></li>
+                            <li><a href="">Week end туры</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Страны</a></li>
+                <li class="drop-down-menu-mob-wrap" id="mob22"><a>Услуги</a>
+                    <div class="menu-mob">
+                        <ul class="drop-down-menu-mob">
+                            <li><a href="">Авиабилеты</a></li>
+                            <li><a href="">Визовая поддержка</a></li>
+                            <li><a href="">Индивидуальный трансфер</a></li>
+                            <li><a href="">Подарочные сертификаты</a></li>
+                            <li><a href="">Бронирование отелей и апартаментов</a></li>
+                            <li><a href="">Как забронировать и оплатить тур</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="carusel">
+            <div class="owl-carousel-top owl-theme">
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner1.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner1_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner2.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner2_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner3.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner3_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner4.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner4_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner5.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner5_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container container-param">
+                <div class="logo-wrap">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/logo.webp">
+                        <source type="image/jpeg" srcset="./assets/img/logo_optimized.png">
+                        <img class="lozad" src="./assets/img/logo_optimized.png" alt="img">
+                    </picture>
+                </div>
+                <div class="button-menu" id="button-menu">
+                    <span class="s1"></span>
+                    <span class="s2"></span>
+                    <span class="s3"></span>
+                </div>
+                <div class="wrap-nav">
+                    <div class="contact">
+                        <ul>
+                            <li class="metca">
+                                <picture>
+                                    <source type="image/webp" srcset="./assets/img/metka.webp">
+                                    <source type="image/jpeg" srcset="./assets/img/metka_optimized.png">
+                                    <img class="lozad" src="./assets/img/metka_optimized.png" alt="img">
+                                </picture>
+                                <span>г. Харьков, ул.Мироносицкая 10а</span>
+                            </li>
+                            <li class="call">
+                                <picture>
+                                    <source type="image/webp" srcset="./assets/img/call.webp">
+                                    <source type="image/jpeg" srcset="./assets/img/call_optimized.png">
+                                    <img class="lozad" src="./assets/img/call_optimized.png" alt="img">
+                                </picture>
+                                <span>+38 (099) 990-81-00 (viber,telegram)</span>
+                            </li>
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/kurazhtur/" aria-label="facebook" rel="noopener"
+                                   target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/img/facebook.webp">
+                                        <source type="image/jpeg" srcset="./assets/img/facebook_optimized.png">
+                                        <img class="lozad" src="./assets/img/facebook_optimized.png" alt="img">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="insta">
+                                <a href="https://www.instagram.com/kurazh.tour/?igshid=69v828tmqqty"
+                                   aria-label="instagram" rel="noopener" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/img/insta.webp">
+                                        <source type="image/jpeg" srcset="./assets/img/insta_optimized.png">
+                                        <img class="lozad" src="./assets/img/insta_optimized.png" alt="img">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li class="drop-down-menu" id="d1"><a>Туры</a>
+                                <div class="wrap-menu">
+                                    <ul>
+                                        <li><a href=""><span>Горящие туры</span></a></li>
+                                        <li><a href=""><span>Поиск тура</span></a></li>
+                                        <li><a href=""><span>Туры по Украине</span></a></li>
+                                        <li><a href=""><span>Экскурсионные туры</span></a></li>
+                                        <li><a href=""><span>Week end туры</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">Страны</a></li>
+                            <li class="drop-down-menu" id="d2"><a>Услуги</a>
+                                <div class="wrap-menu">
+                                    <ul>
+                                        <li><a href=""><span>Авиабилеты</span></a></li>
+                                        <li><a href=""><span>Визовая поддержка</span></a></li>
+                                        <li><a href=""><span>Индивидуальный трансфер</span></a></li>
+                                        <li><a href=""><span>Подарочные сертификаты</span></a></li>
+                                        <li><a href=""><span>Бронирование отелей и апартаментов</span></a></li>
+                                        <li><a href=""><span>Как забронировать и оплатить тур</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container-center-wrap">
+            <div class="sentence">
+            </div>
+            <div class="container container-center">
+                <div class="sentence-container">
+                    <p>
+                        Лучшие предложения по солнечному Египту из Харькова
+                    </p>
+                    <button>
+                        Получить предложение
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen2" id="screen2">
+        <div class="nav-screen2 container">
+            <button class="Hot-tours active button-tur">Горящие туры</button>
+            <button class="Popular-tours button-tur">Популярные туры</button>
+        </div>
+        <div class="screen2Carusel">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i1.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i1_optimized.png">
+                                <img class="lozad" src="./assets/img/i1_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                8 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                9 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                10 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen2Carusel">
+            <div class="owl-carousel2 owl-theme">
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                                <p class="event">
+                                12 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i1.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i1_optimized.png">
+                                <img class="lozad" src="./assets/img/i1_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                22 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                33 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen3">
+        <div class="container">
+            <p class="screen3-title">НАШИ ПРЕИМУЩЕСТВА</p>
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 l-bar">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/layer18.webp">
+                        <source type="image/jpeg" srcset="./assets/img/layer18_optimized.png">
+                        <img class="lozad" src="./assets/img/layer18_optimized.png" alt="img">
+                    </picture>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 r-bar">
+                    <p class="dicrScreen3">
+                        Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День
+                        рождения
+                        в путешествии и не могли определиться... Решили обратиться за помощью в турагенство.
+                        Гульнара,
+                        выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в
+                        Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился
+                        отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал.
+                        Отличный
+                        номер с видом на море.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen4">
+        <picture>
+            <source type="image/webp" srcset="./assets/img/layer19.webp">
+            <source type="image/jpeg" srcset="./assets/img/layer19_optimized.png">
+            <img class="bg4" src="./assets/img/layer19_optimized.png" alt="img">
+        </picture>
+        <div class="container">
+            <p class="title-screen4">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</p>
+            <form class="lido-forma" action="" method="POST" id="dd1">
+                <input class="validator-required" type="text" name='name' aria-label="Name" placeholder="Имя">
+                <input class="validator-required" type="email" name='email' aria-label="Email" placeholder="Email">
+                <input class="validator-required" type="tel" name='phone' aria-label="Phone" placeholder="Телефон">
+                <div class="wrap-dropdown">
+                    <div data-metka="button-selekt">
+                        <span data-metka="tur" class="select-tur">Страна тура</span>
+                        <span data-metka="strelka" class="strelka"></span>
+                    </div>
+                    <div class="dropdown">
+                        <ul class="dropdown-ul">
+                            <li data-metka="nav">Турция</li>
+                            <li data-metka="nav">Египет</li>
+                            <li data-metka="nav">Шри-Ланка</li>
+                            <li data-metka="nav">Доминикана</li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="submit">Получить предложение</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container containerFlex">
+        <div class="col1">
+            <div class="block-line">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/logoBottom.webp">
+                    <source type="image/jpeg" srcset="./assets/img/logoBottom_optimized.png">
+                    <img class="lozad" src="./assets/img/logoBottom_optimized.png" alt="img">
+                </picture>
+            </div>
+            <div class="block-line">
+                <p class="about-Us">
+                    Кураж тур агенство,которое предоставляет услуги по поиску, оформлению и подбору туров для
+                    вас и ваших родных.
+                </p>
+            </div>
+            <div class="block-WA">
+                <span>Создание сайта —</span>
+                <a href="https://webakula.ua" aria-label="webakula logo" rel="noopener" target="_blank">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/logoWA.webp">
+                        <source type="image/jpeg" srcset="./assets/img/logoWA_optimized.png">
+                        <img class="lozad" src="./assets/img/logoWA_optimized.png" alt="img">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="col2">
+            <p class="title-col">
+                Навигация
+            </p>
+            <ul>
+                <li><a href="https://kurazh-tour.com.ua/" rel="noopener" target="_blank">Главная</a></li>
+                <li><a href="https://kurazh-tour.com.ua/about" rel="noopener" target="_blank">О компани</a></li>
+                <li><a href="https://kurazh-tour.com.ua/countries" rel="noopener" target="_blank">Туры</a></li>
+                <li><a href="https://kurazh-tour.com.ua/contacts" rel="noopener" target="_blank">Контакты</a>
+                </li>
+                <li><a href="https://kurazh-tour.com.ua/services/arenda-avtomobiley" rel="noopener"
+                       target="_blank">Услуги</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <p class="title-col">
+                Поддержка
+            </p>
+            <ul>
+                <li><a href="https://kurazh-tour.com.ua/" rel="noopener" target="_blank">FAQ</a></li>
+                <li><a href="https://kurazh-tour.com.ua/about" rel="noopener" target="_blank">Блог</a></li>
+                <li><a href="https://kurazh-tour.com.ua/countries" rel="noopener" target="_blank">Туры</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+            <p class="title-col">
+                Контакты
+            </p>
+            <ul>
+                <li>
+                    <a href="/" aria-label="address">
+                        <picture class="picture1">
+                            <source type="image/webp" srcset="./assets/img/metka.webp">
+                            <source type="image/jpeg" srcset="./assets/img/metka_optimized.png">
+                            <img class="lozad" src="./assets/img/metka_optimized.png" alt="img">
+                        </picture>
+
+                        г. Харьков, ул. Лермонтовская 10а</a>
+                </li>
+                <li>
+                    <a href="tel:+380999908100" aria-label='phone number'>
+                        <picture class="picture1">
+                            <source type="image/webp" srcset="./assets/img/call.webp">
+                            <source type="image/jpeg" srcset="./assets/img/call_optimized.png">
+                            <img class="lozad" src="./assets/img/call_optimized.png" alt="img">
+                        </picture>
+                        +38 (099) 990-81-00</a>
+                </li>
+            </ul>
+            <div class="bolocSocial">
+                <a href="https://www.facebook.com/kurazhtur/" aria-label="facebook" rel="noopener"
+                   target="_blank">
+                    <picture class="picture2">
+                        <source type="image/webp" srcset="./assets/img/facebook.webp">
+                        <source type="image/jpeg" srcset="./assets/img/facebook_optimized.png">
+                        <img class="lozad" src="./assets/img/facebook_optimized.png" alt="img">
+                    </picture>
+                </a>
+                <a href="https://www.instagram.com/kurazh.tour/?igshid=69v828tmqqty" aria-label="instagram"
+                   rel="noopener" target="_blank">
+                    <picture class="picture3">
+                        <source type="image/webp" srcset="./assets/img/insta.webp">
+                        <source type="image/jpeg" srcset="./assets/img/insta_optimized.png">
+                        <img class="lozad" src="./assets/img/insta_optimized.png" alt="img">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/libs.min.js"></script>
+<script type="module" src="assets/js/main.min.js"></script>
+</body>
+
+</html>

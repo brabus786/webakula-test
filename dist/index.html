@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#528A4A"/>
+    <meta name="Description" content="Test markup project">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--   TODO: Switch priority to critical -->
+    <title>Test</title>
+        <style>@-ms-viewport{width:device-width}html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,:after,:before{box-sizing:inherit}.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px}@media (min-width:576px){.container{padding-right:15px;padding-left:15px}}@media (min-width:768px){.container{padding-right:15px;padding-left:15px}}@media (min-width:992px){.container{padding-right:15px;padding-left:15px}}@media (min-width:1200px){.container{padding-right:15px;padding-left:15px}}@media (min-width:576px){.container{width:540px;max-width:100%}}@media (min-width:768px){.container{width:720px;max-width:100%}}@media (min-width:992px){.container{width:960px;max-width:100%}}@media (min-width:1200px){.container{width:1140px;max-width:100%}}.container-fluid{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px}@media (min-width:576px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:768px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:992px){.container-fluid{padding-right:15px;padding-left:15px}}@media (min-width:1200px){.container-fluid{padding-right:15px;padding-left:15px}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}@media (min-width:576px){.row{margin-right:-15px;margin-left:-15px}}@media (min-width:768px){.row{margin-right:-15px;margin-left:-15px}}@media (min-width:992px){.row{margin-right:-15px;margin-left:-15px}}@media (min-width:1200px){.row{margin-right:-15px;margin-left:-15px}}.no-gutters{margin-right:0;margin-left:0}.no-gutters>.col,.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:576px){.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12{padding-right:15px;padding-left:15px}}@media (min-width:768px){.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12{padding-right:15px;padding-left:15px}}@media (min-width:992px){.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12{padding-right:15px;padding-left:15px}}@media (min-width:1200px){.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-xl,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12{padding-right:15px;padding-left:15px}}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.pull-0{right:auto}.pull-1{right:8.333333%}.pull-2{right:16.666667%}.pull-3{right:25%}.pull-4{right:33.333333%}.pull-5{right:41.666667%}.pull-6{right:50%}.pull-7{right:58.333333%}.pull-8{right:66.666667%}.pull-9{right:75%}.pull-10{right:83.333333%}.pull-11{right:91.666667%}.pull-12{right:100%}.push-0{left:auto}.push-1{left:8.333333%}.push-2{left:16.666667%}.push-3{left:25%}.push-4{left:33.333333%}.push-5{left:41.666667%}.push-6{left:50%}.push-7{left:58.333333%}.push-8{left:66.666667%}.push-9{left:75%}.push-10{left:83.333333%}.push-11{left:91.666667%}.push-12{left:100%}.offset-1{margin-left:8.333333%}.offset-2{margin-left:16.666667%}.offset-3{margin-left:25%}.offset-4{margin-left:33.333333%}.offset-5{margin-left:41.666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.333333%}.offset-8{margin-left:66.666667%}.offset-9{margin-left:75%}.offset-10{margin-left:83.333333%}.offset-11{margin-left:91.666667%}@media (min-width:576px){.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-sm-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-sm-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-sm-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.pull-sm-0{right:auto}.pull-sm-1{right:8.333333%}.pull-sm-2{right:16.666667%}.pull-sm-3{right:25%}.pull-sm-4{right:33.333333%}.pull-sm-5{right:41.666667%}.pull-sm-6{right:50%}.pull-sm-7{right:58.333333%}.pull-sm-8{right:66.666667%}.pull-sm-9{right:75%}.pull-sm-10{right:83.333333%}.pull-sm-11{right:91.666667%}.pull-sm-12{right:100%}.push-sm-0{left:auto}.push-sm-1{left:8.333333%}.push-sm-2{left:16.666667%}.push-sm-3{left:25%}.push-sm-4{left:33.333333%}.push-sm-5{left:41.666667%}.push-sm-6{left:50%}.push-sm-7{left:58.333333%}.push-sm-8{left:66.666667%}.push-sm-9{left:75%}.push-sm-10{left:83.333333%}.push-sm-11{left:91.666667%}.push-sm-12{left:100%}.offset-sm-0{margin-left:0}.offset-sm-1{margin-left:8.333333%}.offset-sm-2{margin-left:16.666667%}.offset-sm-3{margin-left:25%}.offset-sm-4{margin-left:33.333333%}.offset-sm-5{margin-left:41.666667%}.offset-sm-6{margin-left:50%}.offset-sm-7{margin-left:58.333333%}.offset-sm-8{margin-left:66.666667%}.offset-sm-9{margin-left:75%}.offset-sm-10{margin-left:83.333333%}.offset-sm-11{margin-left:91.666667%}}@media (min-width:768px){.col-md{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-md-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.pull-md-0{right:auto}.pull-md-1{right:8.333333%}.pull-md-2{right:16.666667%}.pull-md-3{right:25%}.pull-md-4{right:33.333333%}.pull-md-5{right:41.666667%}.pull-md-6{right:50%}.pull-md-7{right:58.333333%}.pull-md-8{right:66.666667%}.pull-md-9{right:75%}.pull-md-10{right:83.333333%}.pull-md-11{right:91.666667%}.pull-md-12{right:100%}.push-md-0{left:auto}.push-md-1{left:8.333333%}.push-md-2{left:16.666667%}.push-md-3{left:25%}.push-md-4{left:33.333333%}.push-md-5{left:41.666667%}.push-md-6{left:50%}.push-md-7{left:58.333333%}.push-md-8{left:66.666667%}.push-md-9{left:75%}.push-md-10{left:83.333333%}.push-md-11{left:91.666667%}.push-md-12{left:100%}.offset-md-0{margin-left:0}.offset-md-1{margin-left:8.333333%}.offset-md-2{margin-left:16.666667%}.offset-md-3{margin-left:25%}.offset-md-4{margin-left:33.333333%}.offset-md-5{margin-left:41.666667%}.offset-md-6{margin-left:50%}.offset-md-7{margin-left:58.333333%}.offset-md-8{margin-left:66.666667%}.offset-md-9{margin-left:75%}.offset-md-10{margin-left:83.333333%}.offset-md-11{margin-left:91.666667%}}@media (min-width:992px){.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-lg-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-lg-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-lg-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-lg-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-lg-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.pull-lg-0{right:auto}.pull-lg-1{right:8.333333%}.pull-lg-2{right:16.666667%}.pull-lg-3{right:25%}.pull-lg-4{right:33.333333%}.pull-lg-5{right:41.666667%}.pull-lg-6{right:50%}.pull-lg-7{right:58.333333%}.pull-lg-8{right:66.666667%}.pull-lg-9{right:75%}.pull-lg-10{right:83.333333%}.pull-lg-11{right:91.666667%}.pull-lg-12{right:100%}.push-lg-0{left:auto}.push-lg-1{left:8.333333%}.push-lg-2{left:16.666667%}.push-lg-3{left:25%}.push-lg-4{left:33.333333%}.push-lg-5{left:41.666667%}.push-lg-6{left:50%}.push-lg-7{left:58.333333%}.push-lg-8{left:66.666667%}.push-lg-9{left:75%}.push-lg-10{left:83.333333%}.push-lg-11{left:91.666667%}.push-lg-12{left:100%}.offset-lg-0{margin-left:0}.offset-lg-1{margin-left:8.333333%}.offset-lg-2{margin-left:16.666667%}.offset-lg-3{margin-left:25%}.offset-lg-4{margin-left:33.333333%}.offset-lg-5{margin-left:41.666667%}.offset-lg-6{margin-left:50%}.offset-lg-7{margin-left:58.333333%}.offset-lg-8{margin-left:66.666667%}.offset-lg-9{margin-left:75%}.offset-lg-10{margin-left:83.333333%}.offset-lg-11{margin-left:91.666667%}}@media (min-width:1200px){.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-xl-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-xl-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-xl-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-xl-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-xl-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-xl-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-xl-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-xl-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.pull-xl-0{right:auto}.pull-xl-1{right:8.333333%}.pull-xl-2{right:16.666667%}.pull-xl-3{right:25%}.pull-xl-4{right:33.333333%}.pull-xl-5{right:41.666667%}.pull-xl-6{right:50%}.pull-xl-7{right:58.333333%}.pull-xl-8{right:66.666667%}.pull-xl-9{right:75%}.pull-xl-10{right:83.333333%}.pull-xl-11{right:91.666667%}.pull-xl-12{right:100%}.push-xl-0{left:auto}.push-xl-1{left:8.333333%}.push-xl-2{left:16.666667%}.push-xl-3{left:25%}.push-xl-4{left:33.333333%}.push-xl-5{left:41.666667%}.push-xl-6{left:50%}.push-xl-7{left:58.333333%}.push-xl-8{left:66.666667%}.push-xl-9{left:75%}.push-xl-10{left:83.333333%}.push-xl-11{left:91.666667%}.push-xl-12{left:100%}.offset-xl-0{margin-left:0}.offset-xl-1{margin-left:8.333333%}.offset-xl-2{margin-left:16.666667%}.offset-xl-3{margin-left:25%}.offset-xl-4{margin-left:33.333333%}.offset-xl-5{margin-left:41.666667%}.offset-xl-6{margin-left:50%}.offset-xl-7{margin-left:58.333333%}.offset-xl-8{margin-left:66.666667%}.offset-xl-9{margin-left:75%}.offset-xl-10{margin-left:83.333333%}.offset-xl-11{margin-left:91.666667%}}.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#fff;font-size:14px;margin:5px;padding:4px 7px;background:#d6d6d6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#fff;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#d6d6d6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}body{font-family:Arial;min-height:100vh;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}main{-ms-flex-positive:1;flex-grow:1}a,a:hover{text-decoration:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}input.error{border-bottom-color:red!important}.carusel{position:absolute;z-index:10;height:100%;width:100%;overflow:hidden}.carusel .owl-carousel-top{height:100%;position:relative}.carusel .owl-carousel-top .owl-nav{display:none}.carusel .owl-carousel-top .owl-dots{bottom:20px;position:absolute;left:380px}.carusel .owl-carousel-top .owl-dots .active span{background-color:#fbd341!important}.carusel .owl-carousel-top .owl-dots .owl-dot{background-color:hsla(0,0%,100%,0);border:none;outline:none!important}.carusel .owl-carousel-top .owl-dots .owl-dot span{width:15px;height:15px;border-radius:50%;margin:1px}.carusel .owl-carousel-top .owl-stage-outer,.carusel .owl-carousel-top .owl-stage-outer .owl-stage{height:100%}.carusel .owl-carousel-top .owl-stage-outer .owl-stage .owl-item{display:inline-block;height:100%!important}.carusel .owl-carousel-top .owl-stage-outer .owl-stage .owl-item .item,.carusel .owl-carousel-top .owl-stage-outer .owl-stage .owl-item .item img{height:100%}.Эллипс_2{border-radius:50%;position:absolute;left:390px;top:695px;width:15px;height:14px;z-index:122}.header{position:absolute;z-index:20;width:100%;min-height:95px;display:-ms-flexbox;display:flex;-ms-flex-align:stretch;align-items:stretch}.header .container-param{padding:0;-ms-flex-pack:justify;justify-content:space-between}.header .container-param,.header .container-param .logo-wrap{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.header .container-param .logo-wrap{-ms-flex-pack:center;justify-content:center;width:95px;height:95px}.header .container-param .logo-wrap img{height:80px}.header .container-param .wrap-nav{height:100%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:stretch;align-items:stretch;max-width:765px;width:100%}.header .container-param .wrap-nav .contact{height:50px}.header .container-param .wrap-nav .contact ul{display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end;height:100%}.header .container-param .wrap-nav .contact ul li{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.header .container-param .wrap-nav .contact ul li span{color:#fff}.header .container-param .wrap-nav .contact ul .insta{margin-left:25px;width:22px}.header .container-param .wrap-nav .contact ul .facebook{margin-left:60px;width:22px}.header .container-param .wrap-nav .contact ul .call{margin-left:40px;font-size:14px}.header .container-param .wrap-nav .contact ul .call span{font-family:Arial;font-weight:700;color:hsla(0,0%,95%,.8);font-size:14px}.header .container-param .wrap-nav .contact ul .call img{margin-right:3px;width:17px}.header .container-param .wrap-nav .contact ul .metca span{font-size:14px;font-family:Arial;font-weight:700;color:hsla(0,0%,95%,.8)}.header .container-param .wrap-nav .contact ul .metca img{margin-right:12px;width:13px}.header .container-param .wrap-nav .nav ul{display:-ms-flexbox;display:flex;width:100%;-ms-flex-pack:justify;justify-content:space-between;border-radius:10px;background-color:#fbd341}.header .container-param .wrap-nav .nav ul li{width:inherit}.header .container-param .wrap-nav .nav ul li a{height:45px;width:100%;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;color:#000;font-family:Arial;font-weight:400}.grid-s1{position:relative;border:1px solid red;z-index:10;width:100%;display:grid;grid-template-rows:100px 100px 100px 100px;grid-template-columns:auto 1140px auto}.grid-s1 .sentence{height:auto;background-color:green;grid-row-start:2;grid-row-end:3;grid-column-start:1;grid-column-end:3}.sentence{width:1350px;height:100%;position:absolute;z-index:-10;left:0;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end;background:linear-gradient(180deg,rgba(15,37,71,.49),rgba(25,44,74,.32) 68%,rgba(34,51,77,0))}.sentence .sentence-container{width:955px;height:100%;padding-top:65px}.sentence .sentence-container p{color:#fff;margin-bottom:45px;font-size:30px;font-family:Arial;font-weight:700;line-height:.8}.sentence .sentence-container button{border-radius:10px;background-color:#fbd341;min-width:254px;min-height:48px;color:#000;font-size:18px;border:none;outline:none;font-family:Arial;font-weight:400;cursor:pointer}.drop-down-menu{position:relative;cursor:pointer}.drop-down-menu:hover .wrap-menu ul{transform:translateZ(0)!important}.drop-down-menu:hover .wrap-menu{box-shadow:-1.236px 3.804px 14.7px .3px rgba(0,0,0,.34)}.drop-down-menu .wrap-menu{top:45px;position:absolute;height:0;overflow:hidden;transition:.5s;width:-webkit-max-content;width:-moz-max-content;width:max-content;max-width:240px}.drop-down-menu .wrap-menu ul{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;transition:.5s;border-radius:0!important;background-color:rgba(51,151,226,.8)!important}.drop-down-menu .wrap-menu ul li:hover{background-color:#3397e2!important}.drop-down-menu .wrap-menu ul a{min-height:35px!important}.drop-down-menu .wrap-menu ul a span{height:35px!important;color:#fff!important;font-family:Arial;font-size:14px!important;font-weight:400!important;text-align:left!important;width:100%;line-height:1.2;padding:0 15px 0 30px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.container-center-wrap{position:absolute;z-index:10;margin:auto;width:100%;top:330px}.container-center-wrap .container-center p{color:#fff;margin-bottom:45px;font-size:30px;font-family:Arial;font-weight:700;line-height:.8}.container-center-wrap .container-center button{border-radius:10px;background-color:#fbd341;min-width:254px;min-height:48px;color:#000;font-size:18px;border:none;outline:none;font-family:Arial;font-weight:400;cursor:pointer}.container-center-wrap .container-center .sentence-container{height:100%;padding-top:65px;padding-bottom:45px}.mob-menu{display:none;transform:translate3d(250px,0,0);transition:.5s;position:absolute;right:0;top:100px;z-index:20;width:0;overflow:hidden}.mob-menu .mob-menu-ul{top:0;right:0;border:1px solid grey;border-right:none;transition:.5s}.mob-menu .mob-menu-ul li{border-bottom:1px solid grey}.mob-menu .mob-menu-ul li:last-child{border-bottom:none}.mob-menu .mob-menu-ul li a{background-color:#fbd341;height:40px;font-family:Arial;font-weight:400;width:250px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;padding:0 15px;font-size:18px;color:#000}.button-menu{transform:rotate(0deg);width:35px;height:35px;display:none;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:distribute;justify-content:space-around;margin-right:15px;-ms-flex-align:center;align-items:center;transition:.5s}.button-menu span{width:30px;height:3px;border-radius:3px;background-color:#fbd341}.screen1{height:736px;width:100%;position:relative;z-index:0;background:#44acdb}.screen1 .owl-stage-outer .item img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}</style>
+        <link rel="preload" as="style" href="assets/css/main.css">
+        <noscript>
+            <link rel="stylesheet" href="assets/css/main.css">
+        </noscript>
+</head>
+<body>
+<main>
+    <section class="screen1">
+        <nav class="mob-menu" id="mob-menu">
+            <ul class="mob-menu-ul">
+                <li><a href="">Главная</a></li>
+                <li class="drop-down-menu-mob-wrap" id="mob1"><a data-metka-a="#mob1">Туры</a>
+                    <div class="menu-mob">
+                        <ul class="drop-down-menu-mob">
+                            <li><a href="">Горящие туры</a></li>
+                            <li><a href="">Поиск тура</a></li>
+                            <li><a href="">Туры по Украине</a></li>
+                            <li><a href="">Экскурсионные туры</a></li>
+                            <li><a href="">Week end туры</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Страны</a></li>
+                <li class="drop-down-menu-mob-wrap" id="mob22"><a>Услуги</a>
+                    <div class="menu-mob">
+                        <ul class="drop-down-menu-mob">
+                            <li><a href="">Авиабилеты</a></li>
+                            <li><a href="">Визовая поддержка</a></li>
+                            <li><a href="">Индивидуальный трансфер</a></li>
+                            <li><a href="">Подарочные сертификаты</a></li>
+                            <li><a href="">Бронирование отелей и апартаментов</a></li>
+                            <li><a href="">Как забронировать и оплатить тур</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="carusel">
+            <div class="owl-carousel-top owl-theme">
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner1.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner1_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner2.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner2_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner3.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner3_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner4.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner4_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/banner5.webp">
+                        <source type="image/jpeg" srcset="./assets/img/banner5_optimized.png">
+                        <img class="lozad" src="./assets/img/banner1_optimized.png" alt="My Image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container container-param">
+                <div class="logo-wrap">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/logo.webp">
+                        <source type="image/jpeg" srcset="./assets/img/logo_optimized.png">
+                        <img class="lozad" src="./assets/img/logo_optimized.png" alt="img">
+                    </picture>
+                </div>
+                <div class="button-menu" id="button-menu">
+                    <span class="s1"></span>
+                    <span class="s2"></span>
+                    <span class="s3"></span>
+                </div>
+                <div class="wrap-nav">
+                    <div class="contact">
+                        <ul>
+                            <li class="metca">
+                                <picture>
+                                    <source type="image/webp" srcset="./assets/img/metka.webp">
+                                    <source type="image/jpeg" srcset="./assets/img/metka_optimized.png">
+                                    <img class="lozad" src="./assets/img/metka_optimized.png" alt="img">
+                                </picture>
+                                <span>г. Харьков, ул.Мироносицкая 10а</span>
+                            </li>
+                            <li class="call">
+                                <picture>
+                                    <source type="image/webp" srcset="./assets/img/call.webp">
+                                    <source type="image/jpeg" srcset="./assets/img/call_optimized.png">
+                                    <img class="lozad" src="./assets/img/call_optimized.png" alt="img">
+                                </picture>
+                                <span>+38 (099) 990-81-00 (viber,telegram)</span>
+                            </li>
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/kurazhtur/" aria-label="facebook" rel="noopener"
+                                   target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/img/facebook.webp">
+                                        <source type="image/jpeg" srcset="./assets/img/facebook_optimized.png">
+                                        <img class="lozad" src="./assets/img/facebook_optimized.png" alt="img">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="insta">
+                                <a href="https://www.instagram.com/kurazh.tour/?igshid=69v828tmqqty"
+                                   aria-label="instagram" rel="noopener" target="_blank">
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/img/insta.webp">
+                                        <source type="image/jpeg" srcset="./assets/img/insta_optimized.png">
+                                        <img class="lozad" src="./assets/img/insta_optimized.png" alt="img">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li class="drop-down-menu" id="d1"><a>Туры</a>
+                                <div class="wrap-menu">
+                                    <ul>
+                                        <li><a href=""><span>Горящие туры</span></a></li>
+                                        <li><a href=""><span>Поиск тура</span></a></li>
+                                        <li><a href=""><span>Туры по Украине</span></a></li>
+                                        <li><a href=""><span>Экскурсионные туры</span></a></li>
+                                        <li><a href=""><span>Week end туры</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">Страны</a></li>
+                            <li class="drop-down-menu" id="d2"><a>Услуги</a>
+                                <div class="wrap-menu">
+                                    <ul>
+                                        <li><a href=""><span>Авиабилеты</span></a></li>
+                                        <li><a href=""><span>Визовая поддержка</span></a></li>
+                                        <li><a href=""><span>Индивидуальный трансфер</span></a></li>
+                                        <li><a href=""><span>Подарочные сертификаты</span></a></li>
+                                        <li><a href=""><span>Бронирование отелей и апартаментов</span></a></li>
+                                        <li><a href=""><span>Как забронировать и оплатить тур</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container-center-wrap">
+            <div class="sentence">
+            </div>
+            <div class="container container-center">
+                <div class="sentence-container">
+                    <p>
+                        Лучшие предложения по солнечному Египту из Харькова
+                    </p>
+                    <button>
+                        Получить предложение
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen2" id="screen2">
+        <div class="nav-screen2 container">
+            <button class="Hot-tours active button-tur">Горящие туры</button>
+            <button class="Popular-tours button-tur">Популярные туры</button>
+        </div>
+        <div class="screen2Carusel">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i1.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i1_optimized.png">
+                                <img class="lozad" src="./assets/img/i1_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                8 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                9 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                10 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen2Carusel">
+            <div class="owl-carousel2 owl-theme">
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                                <p class="event">
+                                12 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i1.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i1_optimized.png">
+                                <img class="lozad" src="./assets/img/i1_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                22 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-mi">
+                        <div class="card-wrap-img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/img/i2.webp">
+                                <source type="image/jpeg" srcset="./assets/img/i2_optimized.png">
+                                <img class="lozad" src="./assets/img/i2_optimized.png" alt="img">
+                            </picture>
+                        </div>
+                        <div class="short-description">
+                            <p class="event">
+                                33 марта в Cyrene Sharm hotel
+                            </p>
+                            <p class="date">
+                                (<span>12.03.2018</span> - <span>19.03.2018</span>)
+                            </p>
+                            <span class="line"></span>
+
+                            <p class="descr">
+                                Перелёт, питание по системе all inclusive, трансфер
+                            </p>
+                            <div class="wrap-block-price">
+                                <div class="block-prices">
+                                    <span class="cena">1 295</span>
+                                    <span class="valuta">грн</span>
+                                    <sup class="piple">/за человека</sup>
+                                </div>
+                                <button aria-label="Read More" class="wrap-block-price-button">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen3">
+        <div class="container">
+            <p class="screen3-title">НАШИ ПРЕИМУЩЕСТВА</p>
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 l-bar">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/layer18.webp">
+                        <source type="image/jpeg" srcset="./assets/img/layer18_optimized.png">
+                        <img class="lozad" src="./assets/img/layer18_optimized.png" alt="img">
+                    </picture>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 r-bar">
+                    <p class="dicrScreen3">
+                        Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День
+                        рождения
+                        в путешествии и не могли определиться... Решили обратиться за помощью в турагенство.
+                        Гульнара,
+                        выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в
+                        Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился
+                        отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал.
+                        Отличный
+                        номер с видом на море.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen4">
+        <picture>
+            <source type="image/webp" srcset="./assets/img/layer19.webp">
+            <source type="image/jpeg" srcset="./assets/img/layer19_optimized.png">
+            <img class="bg4" src="./assets/img/layer19_optimized.png" alt="img">
+        </picture>
+        <div class="container">
+            <p class="title-screen4">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</p>
+            <form class="lido-forma" action="" method="POST" id="dd1">
+                <input class="validator-required" type="text" name='name' aria-label="Name" placeholder="Имя">
+                <input class="validator-required" type="email" name='email' aria-label="Email" placeholder="Email">
+                <input class="validator-required" type="tel" name='phone' aria-label="Phone" placeholder="Телефон">
+                <div class="wrap-dropdown">
+                    <div data-metka="button-selekt">
+                        <span data-metka="tur" class="select-tur">Страна тура</span>
+                        <span data-metka="strelka" class="strelka"></span>
+                    </div>
+                    <div class="dropdown">
+                        <ul class="dropdown-ul">
+                            <li data-metka="nav">Турция</li>
+                            <li data-metka="nav">Египет</li>
+                            <li data-metka="nav">Шри-Ланка</li>
+                            <li data-metka="nav">Доминикана</li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="submit">Получить предложение</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container containerFlex">
+        <div class="col1">
+            <div class="block-line">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/logoBottom.webp">
+                    <source type="image/jpeg" srcset="./assets/img/logoBottom_optimized.png">
+                    <img class="lozad" src="./assets/img/logoBottom_optimized.png" alt="img">
+                </picture>
+            </div>
+            <div class="block-line">
+                <p class="about-Us">
+                    Кураж тур агенство,которое предоставляет услуги по поиску, оформлению и подбору туров для
+                    вас и ваших родных.
+                </p>
+            </div>
+            <div class="block-WA">
+                <span>Создание сайта —</span>
+                <a href="https://webakula.ua" aria-label="webakula logo" rel="noopener" target="_blank">
+                    <picture>
+                        <source type="image/webp" srcset="./assets/img/logoWA.webp">
+                        <source type="image/jpeg" srcset="./assets/img/logoWA_optimized.png">
+                        <img class="lozad" src="./assets/img/logoWA_optimized.png" alt="img">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="col2">
+            <p class="title-col">
+                Навигация
+            </p>
+            <ul>
+                <li><a href="https://kurazh-tour.com.ua/" rel="noopener" target="_blank">Главная</a></li>
+                <li><a href="https://kurazh-tour.com.ua/about" rel="noopener" target="_blank">О компани</a></li>
+                <li><a href="https://kurazh-tour.com.ua/countries" rel="noopener" target="_blank">Туры</a></li>
+                <li><a href="https://kurazh-tour.com.ua/contacts" rel="noopener" target="_blank">Контакты</a>
+                </li>
+                <li><a href="https://kurazh-tour.com.ua/services/arenda-avtomobiley" rel="noopener"
+                       target="_blank">Услуги</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <p class="title-col">
+                Поддержка
+            </p>
+            <ul>
+                <li><a href="https://kurazh-tour.com.ua/" rel="noopener" target="_blank">FAQ</a></li>
+                <li><a href="https://kurazh-tour.com.ua/about" rel="noopener" target="_blank">Блог</a></li>
+                <li><a href="https://kurazh-tour.com.ua/countries" rel="noopener" target="_blank">Туры</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+            <p class="title-col">
+                Контакты
+            </p>
+            <ul>
+                <li>
+                    <a href="/" aria-label="address">
+                        <picture class="picture1">
+                            <source type="image/webp" srcset="./assets/img/metka.webp">
+                            <source type="image/jpeg" srcset="./assets/img/metka_optimized.png">
+                            <img class="lozad" src="./assets/img/metka_optimized.png" alt="img">
+                        </picture>
+
+                        г. Харьков, ул. Лермонтовская 10а</a>
+                </li>
+                <li>
+                    <a href="tel:+380999908100" aria-label='phone number'>
+                        <picture class="picture1">
+                            <source type="image/webp" srcset="./assets/img/call.webp">
+                            <source type="image/jpeg" srcset="./assets/img/call_optimized.png">
+                            <img class="lozad" src="./assets/img/call_optimized.png" alt="img">
+                        </picture>
+                        +38 (099) 990-81-00</a>
+                </li>
+            </ul>
+            <div class="bolocSocial">
+                <a href="https://www.facebook.com/kurazhtur/" aria-label="facebook" rel="noopener"
+                   target="_blank">
+                    <picture class="picture2">
+                        <source type="image/webp" srcset="./assets/img/facebook.webp">
+                        <source type="image/jpeg" srcset="./assets/img/facebook_optimized.png">
+                        <img class="lozad" src="./assets/img/facebook_optimized.png" alt="img">
+                    </picture>
+                </a>
+                <a href="https://www.instagram.com/kurazh.tour/?igshid=69v828tmqqty" aria-label="instagram"
+                   rel="noopener" target="_blank">
+                    <picture class="picture3">
+                        <source type="image/webp" srcset="./assets/img/insta.webp">
+                        <source type="image/jpeg" srcset="./assets/img/insta_optimized.png">
+                        <img class="lozad" src="./assets/img/insta_optimized.png" alt="img">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/libs.min.js"></script>
+<script type="module" src="assets/js/main.min.js"></script>
+        <script>
+            (function(){'use strict';function a(b,d){for(var e=c.length;e--;)if(c[e].href===b)return void d();setTimeout(function(){a(b,d)})}var b=window.document,c=b.styleSheets,d=b.body||b.getElementsByTagName('head')[0],e=[];window.importCSS=function(c,f){function g(){h.addEventListener&&h.removeEventListener('load',g),i=!0;var a=!0;e=e.filter(function(b){return!(a=a&&b())})}var h=b.createElement('link'),i=!1;h.rel='stylesheet',h.href=c,h.media='only x',e.push(function(){return i&&(h.media=f||'all'),i}),d.insertBefore(h,null),h.addEventListener&&h.addEventListener('load',g),a(h.href,g)}})();;
+            importCSS('assets/css/main.css');
+        </script>
+</body>
+
+</html>

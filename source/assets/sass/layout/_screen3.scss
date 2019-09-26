@@ -1,0 +1,39 @@
+.screen3{
+  background-color: #F8F7F7;
+  padding: 45px 0 75px 0;
+
+  .screen3-title{
+    font-size: 24px;
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  .row{
+    align-items: center;
+  }
+  .l-bar{
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .r-bar{
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 50px;
+    height: 250px;
+    overflow-x: hidden;
+
+    .dicrScreen3{
+      font-size: 16px;
+      font-family: "Arial";
+      color: rgb(0, 0, 0);
+      line-height: 1.5;
+      height: 100%;
+    }
+  }
+
+}

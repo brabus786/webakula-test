@@ -1,0 +1,37 @@
+.nav-screen2{
+  margin-bottom: 70px;
+
+  .active{
+    color:rgb(251, 211, 65) !important;
+  }
+
+.Hot-tours, .Popular-tours{
+  font-weight: 700;
+  font-family: Arial;
+  cursor: pointer;
+
+  font-size: 20px;
+  border:none;
+  outline: none;
+  background-color: rgba(255,255,255,0);
+}
+  .Popular-tours{
+    color: black;
+    transition: 0.3s;
+
+    &:hover{
+      color: rgb(251, 211, 65);
+    }
+  }
+  .Hot-tours{
+    color: black;
+    margin-right: 10px;
+    transition: 0.3s;
+
+    &:hover{
+      color: rgb(251, 211, 65);
+    }
+  }
+}
+//color: rgb(251, 211, 65);
+

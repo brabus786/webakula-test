@@ -1,0 +1,46 @@
+.sentence{
+  width: 1350px;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  //top: 330px;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  background:linear-gradient( 180deg, rgba(15,37,71,0.49) 0%, rgba(25,44,74,0.32) 68%, rgba(34,51,77,0) 100%);
+
+
+  .sentence-container{
+    width: 955px;
+    height: 100%;
+    padding-top: 65px;
+
+
+
+
+    p{
+      color:white;
+      margin-bottom: 45px;
+      font-size: 30px;
+      font-family: Arial;
+      font-weight: 700;
+      line-height: 0.8;
+    }
+
+    button{
+      border-radius: 10px;
+      background-color: rgb(251, 211, 65);
+      min-width: 254px;
+      min-height: 48px;
+      color: black;
+      font-size: 18px;
+      border:none;
+      outline: none;
+      font-family: Arial;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
+
+

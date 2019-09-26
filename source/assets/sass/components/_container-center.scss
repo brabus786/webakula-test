@@ -1,0 +1,43 @@
+.container-center-wrap {
+  position: absolute;
+  z-index: 10;
+  margin: auto;
+  width: 100%;
+  top: 330px;
+
+  .container-center {
+
+
+    p {
+      color: white;
+      margin-bottom: 45px;
+      font-size: 30px;
+      font-family: Arial;
+      font-weight: 700;
+      line-height: 0.8;
+    }
+
+    button {
+      border-radius: 10px;
+      background-color: rgb(251, 211, 65);
+      min-width: 254px;
+      min-height: 48px;
+      color: black;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      font-family: Arial;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .sentence-container {
+      //width: 955px;
+      height: 100%;
+      padding-top: 65px;
+      padding-bottom: 45px;
+    }
+  }
+}
+
+

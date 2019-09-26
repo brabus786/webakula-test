@@ -1,0 +1,22 @@
+.drop-down-menu-mob-wrap{
+    position: relative;
+
+  .menu-mob{
+    //position: absolute;
+    //top:0px;
+    //right: 80px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+
+    .drop-down-menu-mob{
+
+      a{
+        background-color: #da9e1f;
+      }
+    }
+
+  }
+
+}
